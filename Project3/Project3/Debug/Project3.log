@@ -1,0 +1,5 @@
+﻿  FahrCelTab2.cpp
+c:\users\user\documents\visual studio 2015\projects\project3\project3\fahrceltab2.cpp(13): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+c:\users\user\documents\visual studio 2015\projects\project3\project3\fahrceltab2.cpp(17): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  Project3.vcxproj -> c:\users\user\documents\visual studio 2015\Projects\Project3\Debug\Project3.exe
+  Project3.vcxproj -> c:\users\user\documents\visual studio 2015\Projects\Project3\Debug\Project3.pdb (Partial PDB)

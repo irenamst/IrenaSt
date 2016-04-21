@@ -1,0 +1,4 @@
+﻿  Ex.1-21(ExternalVariable).cpp
+c:\users\user\documents\visual studio 2015\projects\irenaprojects\project38\project38\ex.1-21(externalvariable).cpp(7): warning C4101: 'i': unreferenced local variable
+  Project38.vcxproj -> C:\Users\User\Documents\Visual Studio 2015\Projects\IrenaProjects\Project38\Debug\Project38.exe
+  Project38.vcxproj -> C:\Users\User\Documents\Visual Studio 2015\Projects\IrenaProjects\Project38\Debug\Project38.pdb (Partial PDB)
