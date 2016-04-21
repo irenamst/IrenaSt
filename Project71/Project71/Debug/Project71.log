@@ -1,0 +1,4 @@
+﻿  Ex2.4.cpp
+c:\users\user\documents\github\irenast\project71\project71\ex2.4.cpp(45): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+  Project71.vcxproj -> C:\Users\User\Documents\GitHub\IrenaSt\Project71\Debug\Project71.exe
+  Project71.vcxproj -> C:\Users\User\Documents\GitHub\IrenaSt\Project71\Debug\Project71.pdb (Partial PDB)
