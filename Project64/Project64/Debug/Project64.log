@@ -1,3 +1,2 @@
 ﻿  Ex3-6(2).cpp
-  Project64.vcxproj -> C:\Users\User\Documents\GitHub\IrenaProjects\Project64\Debug\Project64.exe
-  Project64.vcxproj -> C:\Users\User\Documents\GitHub\IrenaProjects\Project64\Debug\Project64.pdb (Partial PDB)
+LINK : fatal error LNK1168: cannot open C:\Users\User\Documents\GitHub\IrenaSt\Project64\Debug\Project64.exe for writing

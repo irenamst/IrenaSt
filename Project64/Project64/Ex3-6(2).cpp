@@ -1,4 +1,4 @@
-#define _CRT_SECURE_NO_WARNINGS //scanf
+//#define _CRT_SECURE_NO_WARNINGS 
 #include<stdio.h>
 #include<string.h>
 
@@ -9,8 +9,10 @@ int main() {
 	int n;
 	int width;
 	char s[100];
-	scanf_s("%d",&n);
-	scanf_s("%d",&width);
+	//scanf("%d",&n);
+	//scanf("%d",&width);
+	scanf_s("%d", &n);
+	scanf_s("%d", &width);
 	itoa(n,s,width);
 	printf("%s\n",s);
 	getchar();
