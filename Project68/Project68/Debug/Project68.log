@@ -1,0 +1,3 @@
+﻿  BasicOfFun.cpp
+c:\users\user\documents\github\irenast\project68\project68\basicoffun.cpp(14): error C2664: 'int strindex(char,char [])': cannot convert argument 1 from 'char [1000]' to 'char'
+  c:\users\user\documents\github\irenast\project68\project68\basicoffun.cpp(14): note: There is no context in which this conversion is possible
