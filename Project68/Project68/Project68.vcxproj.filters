@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="BasicOfFun.cpp">
+    <ClCompile Include="Ex4.1%28BasicOfFun%29.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

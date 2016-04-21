@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="atof-convStr-Doub.cpp">
+    <ClCompile Include="Ex4-2%28atofConvStrDoub%29.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
