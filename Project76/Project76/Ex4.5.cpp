@@ -8,7 +8,6 @@
 /* IMPORTANT: compile with -lm flag(the static math library)
 For eg: gcc -lm rpn-3.c
 */
-
 #include<stdio.h>
 #include<stdlib.h>
 #include<math.h>
@@ -18,56 +17,54 @@ For eg: gcc -lm rpn-3.c
 #define NAME 'n'
 
 int getop(char[]);
-void push(double);
+void push(double f);
 double pop(void);
-void mathfnc(char[]);
+void mathfunc(char s[]);
 
 /* reverse polish calculator */
-
-int main(void)
-{
+int main(void) {
 	int type;
 	double op2, op1;
 	char s[MAXOP];
+	gets_s(s);
 	void clearsp(void);
 
-	while ((type = getop(s)) != EOF)
-	{
+	while ((type = getop(s)) != EOF) {
 		switch (type)
 		{
 		case NUMBER:
 			push(atof(s));
 			break;
 		case NAME:
-			mathfnc(s);
+			mathfunc(s);
 			break;
 		case '+':
-			push(pop() + pop());
+			push(pop()+pop());
 			break;
 		case '*':
 			push(pop()*pop());
 			break;
 		case '-':
 			op2 = pop();
-			push(pop() - op2);
+			push(pop() - op2);;
 			break;
-		case '/':
+		case'/':
 			op2 = pop();
 			if (op2 != 0.0)
 				push(pop() / op2);
 			else
 				printf("error:zero divisor\n");
 			break;
-		case '%':
+		case'%':
 			op2 = pop();
 			if (op2 != 0.0)
 				push(fmod(pop(), op2));
 			else
-				printf("erro:zero divisor\n");
+				printf("error: zero divisor\n");
 			break;
-		case '?':
+		case'?':
 			op2 = pop();
-			printf("\t%.8g\n", op2);
+			printf("\t%.8g\n",op2);
 			push(op2);
 			break;
 		case 'c':
@@ -78,144 +75,120 @@ int main(void)
 			push(op2);
 			push(op2);
 			break;
-		case 's':
+		case's':
 			op1 = pop();
 			op2 = pop();
 			push(op1);
 			push(op2);
 			break;
-		case '\n':
-			printf("\t%.8g\n", pop());
+		case'\n':
+			printf("\t%.g\n",pop());
 			break;
 		default:
-			printf("error: unknown command %s\n", s);
+			printf("error:unknown command %s\n",s);
 			break;
 		}
 	}
+	getchar();
 	return 0;
 }
 
-
 #define MAXVAL 100
-
 int sp = 0;
 double val[MAXVAL];
-
-void push(double f)
-{
+void push(double f) {
 	if (sp < MAXVAL)
 		val[sp++] = f;
 	else
-		printf("error:stack full, cant push %g\n", f);
+		printf("error:stack full, cant push %g\n",f);
 }
 
-
-double pop(void)
-{
-	if (sp>0)
+double pop(void) {
+	if (sp > 0)
 		return val[--sp];
-	else
-	{
-		printf("error: stack empty\n");
+	else {
+		printf("error:stack empty\n");
 		return 0.0;
 	}
 }
 
-void clearsp(void)
-{
+void clearsp(void) {
 	sp = 0;
 }
-
 #include<ctype.h>
 #include<string.h>
 
 int getch(void);
 void ungetch(int);
 
-int getop(char s[])
-{
+int getop(char s[]) {
 	int i, c;
-
 	while ((s[0] = c = getch()) == ' ' || c == '\t')
 		;
 	s[1] = '\0';
-
 	i = 0;
-	if (islower(c))
-	{
-		while (islower(s[++i] = c = getch()));
-		;
+	if (islower(c)) {
+		while (islower(s[++i] = c = getch()))
+			;
 		s[i] = '\0';
 		if (c != EOF)
 			ungetch(c);
-		if (strlen(s)>1)
+		if (strlen(s) > 1)
 			return NAME;
 		else
 			return c;
 	}
-
-	if (!isdigit(c) && c != '.' && c != '-')
+	if (!isdigit(c) && c != '.'&&c != '-')
 		return c;
-
 	if (c == '-')
 		if (isdigit(c = getch()) || c == '.')
 			s[++i] = c;
-		else
-		{
+		else {
 			if (c != EOF)
 				ungetch(c);
 			return '-';
 		}
-
-	if (isdigit(c))
-		while (isdigit(s[++i] = c = getch()))
-			;
-
-	if (c == '.')
-		while (isdigit(s[++i] = c = getch()))
-			;
-
-	s[i] = '\0';
-	if (c != EOF)
-		ungetch(c);
-	return NUMBER;
+		if (isdigit(c))
+			while (isdigit(s[++i] = c = getch()))
+				;
+		if (c == '.')
+			while (isdigit(s[++i] = c = getch()))
+				;
+		s[i] = '\0';
+		if (c != EOF)
+			ungetch(c);
+		return NUMBER;
 }
 
 #define BUFSIZE 100
-
 char buf[BUFSIZE];
 int bufp = 0;
 
-int getch(void)
-{
-	return (bufp > 0) ? buf[--bufp] : getchar();
+int getch(void) {
+	return(bufp > 0) ? buf[--bufp] : getchar();
 }
 
-void ungetch(int c)
-{
+void ungetch(int c) {
 	if (bufp >= BUFSIZE)
 		printf("ungetch: too many characters\n");
 	else
-		buf[bufp++] = c;
+		buf[bufp++]=c;
 }
 
 /* mathfnc: check the string s for supported math function */
 
-void mathfnc(char s[])
-{
+void mathfunc(char s[]) {
 	double op2;
-
 	if (strcmp(s, "sin") == 0)
 		push(sin(pop()));
 	else if (strcmp(s, "cos") == 0)
 		push(cos(pop()));
 	else if (strcmp(s, "exp") == 0)
 		push(exp(pop()));
-	else if (strcmp(s, "pow") == 0)
-	{
+	else if (strcmp(s, "pow") == 0) {
 		op2 = pop();
-		push(pow(pop(), op2));
+		push(pow(pop(),op2));
 	}
 	else
-		printf("error: %s is not supported\n", s);
+		printf("error:%s is not supported\n",s);
 }
