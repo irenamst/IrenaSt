@@ -1,0 +1,4 @@
+﻿  Ex.5.4.cpp
+c:\users\user\documents\github\irenast\project83\project83\ex.5.4.cpp(51): warning C4715: 'strend': not all control paths return a value
+  Project83.vcxproj -> C:\Users\User\Documents\GitHub\IrenaSt\Project83\Debug\Project83.exe
+  Project83.vcxproj -> C:\Users\User\Documents\GitHub\IrenaSt\Project83\Debug\Project83.pdb (Partial PDB)
