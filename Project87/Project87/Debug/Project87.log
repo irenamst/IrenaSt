@@ -1,0 +1,21 @@
+﻿  Ex6.4.cpp
+c:\users\user\documents\github\irenast\project87\project87\ex6.4.cpp(14): error C2065: 'keytab': undeclared identifier
+c:\users\user\documents\github\irenast\project87\project87\ex6.4.cpp(14): error C2065: 'NKEYS': undeclared identifier
+c:\users\user\documents\github\irenast\project87\project87\ex6.4.cpp(14): error C3861: 'binsearch': identifier not found
+c:\users\user\documents\github\irenast\project87\project87\ex6.4.cpp(15): error C2027: use of undefined type 'key'
+  c:\users\user\documents\github\irenast\project87\project87\ex6.4.cpp(7): note: see declaration of 'key'
+c:\users\user\documents\github\irenast\project87\project87\ex6.4.cpp(15): error C2227: left of '->count' must point to class/struct/union/generic type
+c:\users\user\documents\github\irenast\project87\project87\ex6.4.cpp(16): error C2065: 'keytab': undeclared identifier
+c:\users\user\documents\github\irenast\project87\project87\ex6.4.cpp(16): error C2065: 'NKEYS': undeclared identifier
+c:\users\user\documents\github\irenast\project87\project87\ex6.4.cpp(16): error C2036: 'key *': unknown size
+c:\users\user\documents\github\irenast\project87\project87\ex6.4.cpp(17): error C2027: use of undefined type 'key'
+  c:\users\user\documents\github\irenast\project87\project87\ex6.4.cpp(7): note: see declaration of 'key'
+c:\users\user\documents\github\irenast\project87\project87\ex6.4.cpp(17): error C2227: left of '->count' must point to class/struct/union/generic type
+c:\users\user\documents\github\irenast\project87\project87\ex6.4.cpp(18): error C2027: use of undefined type 'key'
+  c:\users\user\documents\github\irenast\project87\project87\ex6.4.cpp(7): note: see declaration of 'key'
+c:\users\user\documents\github\irenast\project87\project87\ex6.4.cpp(18): error C2227: left of '->count' must point to class/struct/union/generic type
+c:\users\user\documents\github\irenast\project87\project87\ex6.4.cpp(18): error C2227: left of '->word' must point to class/struct/union/generic type
+c:\users\user\documents\github\irenast\project87\project87\ex6.4.cpp(51): error C3861: 'strcomp': identifier not found
+c:\users\user\documents\github\irenast\project87\project87\ex6.4.cpp(51): error C2059: syntax error: 'constant'
+c:\users\user\documents\github\irenast\project87\project87\ex6.4.cpp(53): error C2181: illegal else without matching if
+c:\users\user\documents\github\irenast\project87\project87\ex6.4.cpp(53): error C2227: left of '->cond' must point to class/struct/union/generic type

@@ -17,6 +17,7 @@ int main(void)
 	printf("%d\n", day);
 	month_day(1988, 200);
 	getchar();
+
 	return 0;
 }
 
