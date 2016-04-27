@@ -1,0 +1,5 @@
+﻿  BubbleSort2.cpp
+c:\users\user\documents\github\irenast\project93\project93\bubblesort2.cpp(4): warning C4101: 'swap': unreferenced local variable
+c:\users\user\documents\github\irenast\project93\project93\bubblesort2.cpp(4): warning C4101: 'd': unreferenced local variable
+  Project93.vcxproj -> C:\Users\User\Documents\GitHub\IrenaSt\Project93\Debug\Project93.exe
+  Project93.vcxproj -> C:\Users\User\Documents\GitHub\IrenaSt\Project93\Debug\Project93.pdb (Partial PDB)
