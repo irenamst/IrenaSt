@@ -71,7 +71,8 @@ void display(int m) {
 	int i;
 
 	for (i = 0; i <= m; i++)
-		printf("%d ", c[i]);
+		printf("%d\t ", c[i]);
+	printf("\n");
 }
 
 //void merge(int low, int mid, int high) {
