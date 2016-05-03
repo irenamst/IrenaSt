@@ -1,4 +1,4 @@
 ﻿  MergeSort1.cpp
-c:\users\user\documents\github\irenast\project110\project110\mergesort1.cpp(34): warning C4101: 'i': unreferenced local variable
+c:\users\user\documents\github\irenast\project110\project110\mergesort1.cpp(47): warning C4101: 'i': unreferenced local variable
   Project110.vcxproj -> C:\Users\User\Documents\GitHub\IrenaSt\Project110\Debug\Project110.exe
   Project110.vcxproj -> C:\Users\User\Documents\GitHub\IrenaSt\Project110\Debug\Project110.pdb (Partial PDB)
