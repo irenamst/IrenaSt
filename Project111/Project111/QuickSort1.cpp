@@ -34,11 +34,11 @@ int partition(int left, int right, int pivot) {
 	int rightPointer;
 
 	while (true) {
-		for (leftPointer = left - 1; a[leftPointer] < pivot; leftPointer++)
+		for (leftPointer=left - 1; a[leftPointer] < pivot; leftPointer++)
 			;
 
-		for (rightPointer = right; rightPointer > 0 && a[--rightPointer] > pivot; )
-			;
+		for (rightPointer= right; rightPointer > 0 && a[--rightPointer] > pivot; )
+				;
 
 
 		if (leftPointer >= rightPointer) {
@@ -52,10 +52,10 @@ int partition(int left, int right, int pivot) {
 
 	}
 
-	//	printf(" pivot swapped :%d,%d\n", a[leftPointer], a[right]);
+//	printf(" pivot swapped :%d,%d\n", a[leftPointer], a[right]);
 	swap(leftPointer, right);
-	//	printf("Updated Array: \n");
-	//	display();
+//	printf("Updated Array: \n");
+//	display();
 	return leftPointer;
 }
 
@@ -75,7 +75,7 @@ int main() {
 	n = sizeof(a) / sizeof(a[0]);
 	printf("Input Array: \n");
 	display();
-	quickSort(1, n);
+	quickSort(1, n );
 	printf("Output Array: \n");
 	display();
 	getchar();
