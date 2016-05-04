@@ -1,0 +1,12 @@
+﻿  malloc.cpp
+  Ex.8.6.cpp
+c:\users\user\documents\github\irenast\project114\project114\header.h(17): warning C4273: 'malloc': inconsistent dll linkage
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\corecrt_malloc.h(97): note: see previous definition of 'malloc'
+c:\users\user\documents\github\irenast\project114\project114\header.h(63): warning C4273: 'free': inconsistent dll linkage
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\corecrt_malloc.h(85): note: see previous definition of 'free'
+c:\users\user\documents\github\irenast\project114\project114\header.h(67): error C2143: syntax error: missing ';' before ')'
+c:\users\user\documents\github\irenast\project114\project114\ex.8.6.cpp(14): error C2440: '=': cannot convert from 'void *' to 'char *'
+  c:\users\user\documents\github\irenast\project114\project114\ex.8.6.cpp(14): note: Conversion from 'void*' to pointer to non-'void' requires an explicit cast
+c:\users\user\documents\github\irenast\project114\project114\ex.8.6.cpp(25): error C2440: '=': cannot convert from 'void *' to 'int *'
+  c:\users\user\documents\github\irenast\project114\project114\ex.8.6.cpp(25): note: Conversion from 'void*' to pointer to non-'void' requires an explicit cast
+  Generating Code...
