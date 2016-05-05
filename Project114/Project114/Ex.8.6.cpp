@@ -11,7 +11,7 @@ void *mycalloc(unsigned n, unsigned size)
 
 	nb = n * size;
 
-	if ((p = q = malloc(nb)) != NULL)
+	if ((p = q =(char*) malloc(nb)) != NULL)
 		for (i = 0; i <nb; i++)
 			*p++ = 0;
 	return q;
@@ -22,7 +22,7 @@ int main(int argc, char *argv[]) {
 	int *p = NULL;
 	int i = 0;
 
-	p = mycalloc(100, sizeof *p);
+	p = (int *)mycalloc(100, sizeof *p);
 	if (NULL == p) {
 		printf("mycalloc returned NULL");
 

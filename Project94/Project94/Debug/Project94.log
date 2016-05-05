@@ -1,18 +1,3 @@
 ﻿  Ex6.4.cpp
-c:\users\user\documents\github\irenast\project94\project94\ex6.4.cpp(17): error C2440: 'initializing': cannot convert from 'void *' to 'char *'
-  c:\users\user\documents\github\irenast\project94\project94\ex6.4.cpp(17): note: Conversion from 'void*' to pointer to non-'void' requires an explicit cast
-c:\users\user\documents\github\irenast\project94\project94\ex6.4.cpp(39): error C2100: illegal indirection
-c:\users\user\documents\github\irenast\project94\project94\ex6.4.cpp(39): error C2440: '=': cannot convert from 'void *' to 'char *'
-  c:\users\user\documents\github\irenast\project94\project94\ex6.4.cpp(39): note: Conversion from 'void*' to pointer to non-'void' requires an explicit cast
-c:\users\user\documents\github\irenast\project94\project94\ex6.4.cpp(50): error C2100: illegal indirection
-c:\users\user\documents\github\irenast\project94\project94\ex6.4.cpp(50): error C2440: '=': cannot convert from 'void *' to 'char *'
-  c:\users\user\documents\github\irenast\project94\project94\ex6.4.cpp(50): note: Conversion from 'void*' to pointer to non-'void' requires an explicit cast
-c:\users\user\documents\github\irenast\project94\project94\ex6.4.cpp(53): error C2601: 'print': local function definitions are illegal
-  c:\users\user\documents\github\irenast\project94\project94\ex6.4.cpp(15): note: this line contains a '{' which has not yet been matched
-c:\users\user\documents\github\irenast\project94\project94\ex6.4.cpp(60): error C2601: 'mgetword': local function definitions are illegal
-  c:\users\user\documents\github\irenast\project94\project94\ex6.4.cpp(15): note: this line contains a '{' which has not yet been matched
-c:\users\user\documents\github\irenast\project94\project94\ex6.4.cpp(84): error C2601: 'getch': local function definitions are illegal
-  c:\users\user\documents\github\irenast\project94\project94\ex6.4.cpp(15): note: this line contains a '{' which has not yet been matched
-c:\users\user\documents\github\irenast\project94\project94\ex6.4.cpp(88): error C2601: 'ungetch': local function definitions are illegal
-  c:\users\user\documents\github\irenast\project94\project94\ex6.4.cpp(15): note: this line contains a '{' which has not yet been matched
-c:\users\user\documents\github\irenast\project94\project94\ex6.4.cpp(88): fatal error C1075: the left brace '{' was unmatched at the end of the file
+  Project94.vcxproj -> C:\Users\User\Documents\GitHub\IrenaSt\Project94\Debug\Project94.exe
+  Project94.vcxproj -> C:\Users\User\Documents\GitHub\IrenaSt\Project94\Debug\Project94.pdb (Partial PDB)
