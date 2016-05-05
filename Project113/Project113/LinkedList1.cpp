@@ -3,7 +3,6 @@
 #include <stdio.h>
 #include <assert.h>
 
-
 int Length(struct node* head) {
 	int count = 0;
 	struct node* current = head;
@@ -14,8 +13,6 @@ int Length(struct node* head) {
 	return(count);
 }
 
-
-
 void Push(struct node** headRef, int newData) {
 	struct node* newNode =
 		(struct node*) malloc(sizeof(struct node));
@@ -24,8 +21,6 @@ void Push(struct node** headRef, int newData) {
 	(*headRef) = newNode;
 }
 
-
-
 struct node* BuildOneTwoThree() {
 	struct node* head = NULL;
 	Push(&head, 3);
@@ -33,7 +28,6 @@ struct node* BuildOneTwoThree() {
 	Push(&head, 1);
 	return(head);
 }
-
 
 //////////////////////////////////////////////
 //1
@@ -51,7 +45,8 @@ int GetNth(struct node* head, int index) {
 	struct node* current = head;
 	int count = 0;
 	while (current != NULL) {
-		if (count == index) return(current->data);
+		if (count == index)
+			return(current->data);
 		count++;
 		current = current->next;
 	}
@@ -117,7 +112,6 @@ void InsertNth(struct node** headRef, int index, int data) {
 	}
 }
 
-
 //7
 void SortedInsert(struct node** headRef, struct node* newNode) {
 	struct node temp;
@@ -130,7 +124,6 @@ void SortedInsert(struct node** headRef, struct node* newNode) {
 	current->next = newNode;
 	*headRef = temp.next;
 }
-
 
 //8
 void InsertSort(struct node** headRef) {
@@ -263,14 +256,11 @@ void MergeSort(struct node** headRef) {
 	struct node* head = *headRef;
 	struct node* a;
 	struct node* b;
-	if ((head == NULL) || (head->next == NULL)) {
-		return;
-	}
+	if ((head == NULL) || (head->next == NULL)) return;
 	FrontBackSplit(head, &a, &b);
 	MergeSort(&a);
 	MergeSort(&b);
 	*headRef = SortedMerge(a, b);
-	
 }
 
 //17
