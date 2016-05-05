@@ -1,6 +1,3 @@
 ﻿  Ex.8.6.cpp
-c:\users\user\documents\github\irenast\project114\project114\header.h(17): warning C4273: 'malloc': inconsistent dll linkage
-  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\corecrt_malloc.h(97): note: see previous definition of 'malloc'
-c:\users\user\documents\github\irenast\project114\project114\header.h(63): warning C4273: 'free': inconsistent dll linkage
-  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\corecrt_malloc.h(85): note: see previous definition of 'free'
-c:\users\user\documents\github\irenast\project114\project114\header.h(67): error C2143: syntax error: missing ';' before ')'
+Ex.8.6.obj : error LNK2019: unresolved external symbol "union header * __cdecl morecore(unsigned int)" (?morecore@@YAPATheader@@I@Z) referenced in function "void * __cdecl mymalloc(unsigned int)" (?mymalloc@@YAPAXI@Z)
+C:\Users\User\Documents\GitHub\IrenaSt\Project114\Debug\Project114.exe : fatal error LNK1120: 1 unresolved externals
