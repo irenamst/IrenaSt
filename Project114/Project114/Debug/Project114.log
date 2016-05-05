@@ -1,3 +1,2 @@
-﻿  Ex.8.6.cpp
-Ex.8.6.obj : error LNK2019: unresolved external symbol "union header * __cdecl morecore(unsigned int)" (?morecore@@YAPATheader@@I@Z) referenced in function "void * __cdecl mymalloc(unsigned int)" (?mymalloc@@YAPAXI@Z)
-C:\Users\User\Documents\GitHub\IrenaSt\Project114\Debug\Project114.exe : fatal error LNK1120: 1 unresolved externals
+﻿  Project114.vcxproj -> C:\Users\User\Documents\GitHub\IrenaSt\Project114\Debug\Project114.exe
+  Project114.vcxproj -> C:\Users\User\Documents\GitHub\IrenaSt\Project114\Debug\Project114.pdb (Partial PDB)

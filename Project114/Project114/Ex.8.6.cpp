@@ -1,6 +1,6 @@
 #include<stdio.h>
 #include<stdlib.h>
-#include"Irena.h"
+//#include"Irena.h"
 
 void *mycalloc(unsigned, unsigned);
 
@@ -37,5 +37,6 @@ int main(int argc, char *argv[]) {
 		printf("\n");
 		free(p);
 	}
+	getchar();
 	return 0;
 }

@@ -21,9 +21,6 @@
   <ItemGroup>
     <ClCompile Include="Ex.8.6.cpp" />
   </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="Irena.h" />
-  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{F557A4F0-E701-4059-9691-FF4218492593}</ProjectGuid>
     <RootNamespace>Project114</RootNamespace>
