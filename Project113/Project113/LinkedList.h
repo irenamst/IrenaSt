@@ -57,4 +57,6 @@ struct node* SortedIntersect(struct node* a, struct node* b);
 void Reverse(struct node** headRef);
 
 void RecursiveReverse(struct node** headRef);
+
+void DestroyNode(Node *headRef, Node *node1);
 #endif /* LINKEDLIST_H_ */

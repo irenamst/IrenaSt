@@ -1,4 +1,4 @@
-#include "HeaderLinkedList.h"
+#include "LinkedList.h"
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
@@ -21,6 +21,26 @@ void Push(struct node** headRef, int newData) {
 	(*headRef) = newNode;
 }
 
+void DestroyNode(Node *headRef, Node *node1) {
+		if (!headRef || !headRef->next)
+			return;
+		if (headRef == node1)
+		{
+			node1 = headRef->next;
+			headRef->data = node1->data;
+		}
+		while (headRef->next && headRef->next != node1)
+		{
+			headRef = headRef->next;
+		}
+		if (headRef->next == node1)
+		{
+			headRef->next = node1->next;
+			delete node1;
+		}
+		return;
+	
+}
 struct node* BuildOneTwoThree() {
 	struct node* head = NULL;
 	Push(&head, 3);
@@ -266,4 +286,6 @@ void RecursiveReverse(struct node** headRef) {
 	first->next = NULL;
 	*headRef = rest;
 }
+
+
 
