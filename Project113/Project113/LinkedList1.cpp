@@ -14,8 +14,7 @@ int Length(struct node* head) {
 }
 
 void Push(struct node** headRef, int newData) {
-	struct node* newNode =
-		(struct node*) malloc(sizeof(struct node));
+	struct node* newNode = (struct node*) malloc(sizeof(struct node));
 	newNode->data = newData;
 	newNode->next = (*headRef);
 	(*headRef) = newNode;
