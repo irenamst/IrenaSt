@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 void PopTest();
+void DestroyTest();
 void InsertNthTest();
 void MoveNodeTest();
 void display(struct node*);
@@ -12,21 +13,44 @@ int main()
 	struct node* head;
 	int len;
 	head = BuildOneTwoThree();
+
 	ReverseTest();
 	display(head);
+
+	
 	Push(&head, 13);
+	
 	Push(&(head->next), 42);
+	
+
 	len = Length(head);
 	printf("%d\n", len);
+
 	int m = Count(head, 2);
+	//printf("%d\n",m);
 	display(head);
+
 	DeleteList(&head); 
+	
+
+	
+
 	struct node* myList = BuildOneTwoThree(); 
+	
 	int lastNode = GetNth(myList, 2); 
+	
+	//printf("%d\n", lastNode);
+
 	InsertNthTest();
+
 	PopTest();
 	display(head);
+
 	MoveNodeTest();
+	DestroyTest();
+   
+
+
 	getchar();
 	return 0;
 }
@@ -76,4 +100,19 @@ void ReverseTest() {
 	display(head);
 	
 	DeleteList(&head); 
+}
+void DestroyTest() {
+	struct node *head = NULL;
+	Push(&head, 12);
+	Push(&head, 13);
+	Push(&head, 14);
+	Push(&head, 15);
+	printf("\nDeleting node %d: ", head->next->next->data);
+	DestroyNode(head, head->next->next);
+	while (head != NULL)
+	{
+		printf("%d  ", head->data);
+		head = head->next;
+	}
+	printf("\n");
 }

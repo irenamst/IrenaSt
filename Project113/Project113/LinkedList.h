@@ -1,4 +1,5 @@
 #pragma once
+
 #ifndef LINKEDLIST_H_
 #define LINKEDLIST_H_
 
@@ -7,19 +8,22 @@ typedef struct node {
 	struct node *next;
 } Node;
 
-//empty list
+////////////////////////////////////////
+
 struct list {
 	Node *head;
 };
 
 typedef struct list List;
+/////////////////////
 
 int Length(struct node* head);
 
 void Push(struct node** headRef, int data);
 
 struct node* BuildOneTwoThree();
-///////////////////////////////////////////////////
+///////////////
+
 int Count(struct node* head, int searchFor);
 
 int GetNth(struct node* head, int index);
@@ -27,6 +31,8 @@ int GetNth(struct node* head, int index);
 void DeleteList(struct node** headRef);
 
 int Pop(struct node** headRef);
+
+void DestroyNode(node *headRef, node *node1);
 
 void InsertNth(struct node** headRef, int index, int data);
 
@@ -58,5 +64,8 @@ void Reverse(struct node** headRef);
 
 void RecursiveReverse(struct node** headRef);
 
-void DestroyNode(Node *headRef, Node *node1);
-#endif /* LINKEDLIST_H_ */
+
+
+#endif 
+
+
