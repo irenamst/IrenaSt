@@ -1,6 +1,6 @@
 #include<stdio.h>
 #include<stdlib.h>
-//#include"Irena.h"
+
 
 void *mycalloc(unsigned, unsigned);
 
